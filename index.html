@@ -30,7 +30,7 @@ function parse_query_string(query) {
 function run() {
 	var query = window.location.search.substring(1);
 	var qs = parse_query_string(query);
-	var qqq = "https://narik1.fun?pix=" + qs['pix'] + "&fbclid=" + qs['fbclid'] + "&subid=" + qs['subid']
+	var qqq = "https://narik1.fun?pix=" + qs['pix'] + "&fbclid=" + qs['fbclid'] ;
 
 	window.location = qqq;
 }
