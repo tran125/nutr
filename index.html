@@ -7,38 +7,39 @@
     <title>Confirmación</title>
 <script>
 
-function parse_query_string(query) {
-  var vars = query.split("&");
-  var query_string = {};
-  for (var i = 0; i < vars.length; i++) {
-    var pair = vars[i].split("=");
-    var key = decodeURIComponent(pair[0]);
-    var value = decodeURIComponent(pair[1]);
+//function parse_query_string(query) {
+ // var vars = query.split("&");
+ // var query_string = {};
+ // for (var i = 0; i < vars.length; i++) {
+   // var pair = vars[i].split("=");
+   // var key = decodeURIComponent(pair[0]);
+   // var value = decodeURIComponent(pair[1]);
     // If first entry with this name
-    if (typeof query_string[key] === "undefined") {
-      query_string[key] = decodeURIComponent(value);
-      // If second entry with this name
-    } else if (typeof query_string[key] === "string") {
-      var arr = [query_string[key], decodeURIComponent(value)];
-      query_string[key] = arr;
+   // if (typeof query_string[key] === "undefined") {
+   //   query_string[key] = decodeURIComponent(value);
+   //   // If second entry with this name
+   // } else if (typeof query_string[key] === "string") {
+  //    var arr = [query_string[key], decodeURIComponent(value)];
+   //   query_string[key] = arr;
       // If third or later entry with this name
-    } else {
-      query_string[key].push(decodeURIComponent(value));
-    }
-  }
-  return query_string;
-}
+   // } else {
+   //   query_string[key].push(decodeURIComponent(value));
+   // }
+  //}
+ // return query_string;
+////}
 
-function run() {
-	var query = window.location.search.substring(1);
 
-  // var qs = parse_query_string(query);
+//function run() {
+//	var query = window.location.search.substring(1);
+
+ // // var qs = parse_query_string(query);
 	// var qqq = "https://narik1.fun?pix=" + qs['pix'] + "&fbclid=" + qs['fbclid'] ;
-  var qqq = "https://narik1.fun/?" + query;
+//  var qqq = "https://narik1.fun/?" + query;
 
 
-	window.location = qqq;
-}
+//	window.location = qqq;
+//}
 
 
 
@@ -54,7 +55,8 @@ function run() {
 	<section class="hero">
 		<div class="background-image" style="background-image: url(assets/img/co.svg);"></div>
 		<h1>Enviar, si su país es Colombia.</h1>
-		<a onclick="run()" class="btn">Enviar</a>
+		<!-- <a onclick="run()" class="btn">Enviar</a> -->
+    <a href="http://naturalcorps.fun" class="btn">Enviar</a>
 	</section>
 	<footer>
 	
